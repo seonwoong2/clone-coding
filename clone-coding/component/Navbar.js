@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Styles from '../styles/Home.module.css';
+import Styles from '../styles/Nav.module.css';
 function Navbar() {
   const [isSearch, setIsSearch] = useState(false);
 
@@ -16,7 +16,11 @@ function Navbar() {
             스타벅스코리아
           </a>
         </h1>
-        <nav className={Styles.nav1}>
+        <nav
+          className={Styles.nav1}
+          style={{ right: isSearch ? '232px' : '93px' }}
+        >
+          {/* 232 */}
           <ul className={Styles.nav1ul}>
             <li className={Styles.nav1li01}>
               <a className={Styles.nav1a}>Sign In</a>
@@ -32,8 +36,10 @@ function Navbar() {
             </li>
           </ul>
         </nav>
-        {/* <div style={{'borderRadius'}} */}
-        <p className='search'>
+        <p
+          className={Styles.nav1p}
+          style={{ width: isSearch ? '180px' : '32px' }}
+        >
           <a className={Styles.nav1pa} onClick={() => search()}>
             <img
               className={Styles.nav1img}
@@ -42,7 +48,8 @@ function Navbar() {
             ></img>
           </a>
           <input
-            className='search_input'
+            className={Styles.nav1input}
+            style={{ display: isSearch ? 'block' : 'none' }}
             placeholder='통합검색'
             type='text'
           ></input>
@@ -84,36 +91,6 @@ function Navbar() {
           </ul>
         </div>
       </nav>
-      <style jsx>{`
-        .search {
-          height: 34px;
-          width: ${isSearch ? '130px;' : '32px;'}
-          right: 54px;
-          top: 9px;
-          position: absolute;
-          display: flex;
-          background-color: #fff;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          margin: 0;
-          padding: 0;
-          cursor: pointer;
-        }
-        .search_input {
-          background: none;
-          display: ${isSearch ? 'block;' : 'none;'}
-          border: none;
-          color: #777;
-          font-size: 12px;
-          height: 22px;
-          left: 0;
-          padding: 0 10px;
-          margin: 0;
-          position: absolute;
-          top: 5px;
-          width: 123px;
-        }
-      `}</style>
     </div>
   );
 }

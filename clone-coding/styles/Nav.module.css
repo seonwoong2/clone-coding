@@ -2,7 +2,7 @@
   display: flex;
   background-color: #f6f5ef;
   height: 120px;
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0px;
 }
@@ -23,7 +23,6 @@
 }
 .border {
   width: 1100px;
-  border: 1px solid black;
   margin: 0 auto;
   display: flex;
   position: relative;
@@ -33,7 +32,7 @@
   height: 20px;
   position: absolute;
   top: 15px;
-  right: 93px;
+  transition: 1s;
 }
 .nav1ul {
   display: flex;
@@ -66,6 +65,20 @@
   margin-left: 1px;
   width: 97px;
 }
+.nav1p {
+  height: 34px;
+  right: 54px;
+  top: 9px;
+  position: absolute;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: 1s;
+}
 .nav1a {
   font: normal 13px Avenir, Arial, georgia;
   line-height: 20px;
@@ -82,6 +95,19 @@
   top: 6px;
   position: absolute;
   z-index: 1;
+}
+.nav1input {
+  background: none;
+  border: none;
+  color: #777;
+  font-size: 12px;
+  height: 22px;
+  left: 0;
+  padding: 0 10px;
+  margin: 0;
+  position: absolute;
+  top: 5px;
+  width: 123px;
 }
 .nav2div {
   height: 66px;
