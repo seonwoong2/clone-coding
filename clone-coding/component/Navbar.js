@@ -9,7 +9,7 @@ function Navbar() {
     }
   };
   return (
-    <div class={Styles.background}>
+    <div className={Styles.background}>
       <div className={Styles.border}>
         <h1 className={Styles.h1logo}>
           <a href='/' title='스타벅스 코리아' className={Styles.logo}>

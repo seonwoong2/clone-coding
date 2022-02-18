@@ -7,10 +7,40 @@ body {
 }
 
 a {
-  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
   text-decoration: none;
+  vertical-align: baseline;
+  color: #666;
+  background: transparent;
+  cursor: pointer;
 }
-
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
 * {
   box-sizing: border-box;
 }
