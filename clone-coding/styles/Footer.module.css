@@ -76,4 +76,5 @@
 }
 .awards_Box_img {
   margin: 0 auto;
+  /* display: flex;//지움 */
 }
